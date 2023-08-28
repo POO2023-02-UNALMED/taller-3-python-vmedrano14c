@@ -6,7 +6,7 @@ class TV:
     _volumen: int = 1
     _numTV: int = 0
 
-    def __init__(self, marca, estado: bool):
+    def __init__(self, marca: str, estado: bool):
         self._marca = marca
         self._estado = estado
         TV._numTV += 1
@@ -32,8 +32,8 @@ class TV:
         if (self._estado and self._volumen < 7):
             self._volumen += 1
 
-    def volumenDow(self):
-        if (self.estado and  self._volumen > 0):
+    def volumenDown(self):
+        if (self._estado and self._volumen > 0):
             self._volumen -= 1
 
     def getMarca(self):
