@@ -4,7 +4,7 @@ class TV:
     _precio: int = 500
     _estado: bool
     _volumen: int = 1
-    numTV: int = 0
+    _numTV: int = 0
 
     def __init__(self, marca, estado: bool):
         self._marca = marca
@@ -63,10 +63,10 @@ class TV:
             self._volumen = volumen
 
     def getNumTV ():
-        return TV.numTV  
+        return TV._numTV  
 
     def setNumTV(numTV: int):
-        TV.numTV = numTV
+        TV._numTV = numTV
 
     def setControl(self, control):
         self._control = control
