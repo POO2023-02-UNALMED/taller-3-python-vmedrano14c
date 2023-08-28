@@ -33,7 +33,7 @@ class TV:
             self._volumen += 1
 
     def volumenDow(self):
-        if (self.estado and  self._volume > 0):
+        if (self.estado and  self._volumen > 0):
             self._volumen -= 1
 
     def getMarca(self):
